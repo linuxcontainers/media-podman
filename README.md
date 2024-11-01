@@ -1,4 +1,7 @@
-# Damo's Media Pod
+# LinuxContainers Media Pods
+
+Fork of the excellent work done by Damiantroy but using CoreOS
+URL: https://github.com/damiantroy/media-pod
 
 This tutorial will show the technical instructions to install Plex,
 Sonarr, Radarr, SABNZBd, qBittorrent, Prowlarr, and Gluetun.
