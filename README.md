@@ -4,7 +4,7 @@ Fork of the excellent work done by Damiantroy but using CoreOS
 URL: https://github.com/damiantroy/media-pod
 
 This tutorial will show the technical instructions to install Plex,
-Overseerr, Sonarr, Radarr, SABNZBd, qBittorrent, Prowlarr, and Gluetun.
+Overseerr, Sonarr, Radarr, qBittorrent, Prowlarr, and Gluetun.
 
 The instructions were written for an Enterprise Linux 10 minimal install,
 and should work for CentOS Stream release 10, AlmaLinux 10, and Rocky Linux 10.
@@ -78,7 +78,6 @@ Replace 'localhost' with your server IP:
 * Overseerr: http://localhost:5055/
 * Sonarr: http://localhost:8989/
 * Radarr: http://localhost:7878/
-* SABnzbd: http://localhost:8080/
 * qBittorrent: http://localhost:8111/
 * Prowlarr: http://localhost:9696/
 
@@ -123,22 +122,6 @@ Config:
   - Password
   - Bypass authentication for clients in whitelisted IP subnets: 10.0.0.0/8, 192.168.0.0/16
 
-### SABnzbd
-
-```bash
-systemctl --user start sabnzbd
-```
-
-URL: http://localhost:8080/ (Replace localhost if needed)
-
-Config
-- Add your server
-- Folders:
-  - Completed Download Folder: /data/usenet
-  - Temporary Download Folder: /data/usenet/incomplete
-- Categories:
-  - movies -> /data/usenet/movies
-  - tv -> /data/usenet/tv
 
 ### Radarr
 
